@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import Styles from "../Styles/Dynamic-Page-Styles/Details-Page-Styles/DetailsPageStyles.module.css";
 
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
+import CancelPresentationIcon from "@mui/icons-material/CancelPresentation";
 
 import MensDataSlider from "../Components/Swiper/MensDataSlider";
 import PlaceholderSlide from "../Components/Swiper/PlaceholderSlide";
@@ -16,7 +16,7 @@ const ProductDetailsPage = () => {
 
   const url = `https://fakestoreapi.com/products/${id}`;
 
-  const getProductDetails = async () => {
+  const getProductDetails = useCallback(async () => {
     try {
       const results = await axios.get(url);
       console.log(results);
@@ -24,11 +24,11 @@ const ProductDetailsPage = () => {
     } catch (err) {
       console.log(err);
     }
-  };
+  }, [url]);
 
   useEffect(() => {
     getProductDetails();
-  }, []);
+  }, [getProductDetails]);
   return (
     <div className={Styles.Page}>
       <Link to={"/"}>
@@ -38,6 +38,8 @@ const ProductDetailsPage = () => {
         />
       </Link>
       <div className={Styles.Header}>
+        <img src={details.image} alt="" className={Styles.Header_Image} />
+        <div className={Styles.Diffuser}></div>
         <div className={Styles.Product_Information_Box}>
           <div className={Styles.Image_Container}>
             <img src={details.image} alt="" className={Styles.Image} />
@@ -71,7 +73,9 @@ const ProductDetailsPage = () => {
 
         <p className={Styles.Description}>{details.description}</p>
       </div>
+
       <MensDataSlider />
+
       <PlaceholderSlide />
     </div>
   );

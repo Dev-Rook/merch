@@ -34,6 +34,21 @@
 
     position: relative;
 
+    .Header_Image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .Diffuser {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
     .Product_Information_Box {
       display: flex;
       padding: 5px;

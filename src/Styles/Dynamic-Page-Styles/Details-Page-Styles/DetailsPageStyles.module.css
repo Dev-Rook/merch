@@ -25,6 +25,20 @@
   margin-top: 50px;
   position: relative;
 }
+.Page .Header .Header_Image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Page .Header .Diffuser {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .Page .Header .Product_Information_Box {
   display: flex;
   padding: 5px;

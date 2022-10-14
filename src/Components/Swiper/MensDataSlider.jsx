@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Styles from "../../Styles/Swiper-Styles/Data-Slider-Styles/DataSlider.module.css";
@@ -20,19 +20,20 @@ const MensDataSlider = () => {
 
   const url = `https://fakestoreapi.com/products/category/men's%20clothing`;
 
-  const getProductData = async () => {
+
+  const getProductData = useCallback(async () => {
     try {
-      const result = await axios.get(url);
-      console.table(result);
-      setData(result.data);
+      const results = await axios.get(url);
+      console.log(results);
+      setData(results.data);
     } catch (err) {
       console.log(err);
     }
-  };
+  }, [url]);
 
   useEffect(() => {
     getProductData();
-  }, []);
+  }, [getProductData]);
 
   const scrollUp = () => {
     window.scrollTo({
@@ -91,7 +92,7 @@ const MensDataSlider = () => {
           data.map((value) => {
             return (
               <SwiperSlide key={value?.id}>
-                <Link onClick={scrollUp} to={"/Details/" + value?.id}>
+                <Link onClick={scrollUp} to={"/Details/" + value.id}>
                   <div className={Styles.Card}>
                     <div className={Styles.Image_Container}>
                       <img src={value?.image} alt="" className={Styles.Image} />

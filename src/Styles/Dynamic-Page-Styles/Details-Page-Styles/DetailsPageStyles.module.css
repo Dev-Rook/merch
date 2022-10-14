@@ -1,0 +1,162 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5px;
+  gap: 20px;
+  color: black;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 1200px;
+}
+.Page .Return_Arrow {
+  position: absolute;
+  top: 47px;
+  left: 5px;
+  z-index: 100;
+}
+.Page .Header {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+.Page .Header .Product_Information_Box {
+  display: flex;
+  padding: 5px;
+  gap: 20px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Page .Header .Product_Information_Box .Image_Container {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 70px;
+  width: 70px;
+}
+.Page .Header .Product_Information_Box .Image_Container .Image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Page .Header .Product_Information_Box .Information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  height: 40px;
+}
+.Page .Header .Product_Information_Box .Information .Title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.Page .Header .Product_Information_Box .Information .Price__Rating {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Page .Header .Product_Information_Box .Information .Price__Rating p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+}
+.Page .Order__Circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.Page .Order__Circles .Order_Button {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.7);
+  outline: none;
+  padding: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+.Page .Order__Circles .Circle_Container {
+  display: flex;
+  padding: 5px;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Page .Order__Circles .Circle_Container .Circle {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  height: 30px;
+  width: 30px;
+}
+.Page .Descrption_Box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: left;
+}
+.Page .Descrption_Box .Title {
+  color: black;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Page .Descrption_Box .Description {
+  color: black;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Page {
+    width: 100%;
+  }
+}/*# sourceMappingURL=DetailsPageStyles.module.css.map */

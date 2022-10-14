@@ -1,0 +1,27 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  padding: 5px;
+  // padding-top: 500px;
+  gap: 50px;
+
+  color: black;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 1200px;
+}
+
+// Media Queries Start
+
+@media only screen and (max-width: 1200px) {
+  .Page {
+    width: 100%;
+  }
+}
+
+// Media Queries End

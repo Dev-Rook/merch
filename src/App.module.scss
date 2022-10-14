@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.App {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  height: 100%;
+  width: 100%;
+}

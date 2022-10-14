@@ -1,0 +1,99 @@
+.Slider_Container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: left;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.Slider_Container .Slider_Title {
+  color: black;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+.Slider_Container .Swiper {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+}
+.Slider_Container .Swiper .Card {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 240px;
+  width: 380px;
+}
+.Slider_Container .Swiper .Card .Image_Container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  height: 100%;
+  width: 40%;
+}
+.Slider_Container .Swiper .Card .Image_Container .Image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Slider_Container .Swiper .Card .Information_Box {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 60%;
+}
+.Slider_Container .Swiper .Card .Information_Box .Large_Text {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+.Slider_Container .Swiper .Card .Information_Box .Category {
+  color: gray;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.Slider_Container .Swiper .Card .Information_Box .Small_Text {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.Slider_Container .Swiper .Card .Information_Box .Description {
+  color: black;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.Slider_Container .Swiper .Card .Information_Box .Price__Rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 430px) {
+  .Slider_Container .Swiper .Card {
+    flex-direction: column;
+    height: 450px;
+  }
+  .Slider_Container .Swiper .Card .Image_Container {
+    width: 100%;
+    height: 50%;
+  }
+  .Slider_Container .Swiper .Card .Image_Container .Image {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .Slider_Container .Swiper .Card .Information_Box {
+    height: 100%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=DataSlider.module.css.map */

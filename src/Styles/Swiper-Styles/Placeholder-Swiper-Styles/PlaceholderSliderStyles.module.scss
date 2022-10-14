@@ -101,3 +101,17 @@
     }
   }
 }
+
+// Media Queries Start
+
+@media only screen and (max-width: 500px) {
+  .Slider_Container {
+    .Swiper {
+      .Card {
+        width: 280px;
+      }
+    }
+  }
+}
+
+// Media Queries End

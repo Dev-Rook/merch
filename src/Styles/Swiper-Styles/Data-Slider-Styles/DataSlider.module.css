@@ -1,7 +1,7 @@
 .Slider_Container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   overflow: hidden;
   justify-content: left;
   height: -webkit-fit-content;
@@ -14,6 +14,8 @@
   font-family: sans-serif;
   font-size: 30px;
   font-weight: 300;
+  margin: auto;
+  margin-left: 5px;
 }
 .Slider_Container .Swiper {
   display: flex;

@@ -33,7 +33,7 @@ const ProductDetailsPage = () => {
     <div className={Styles.Page}>
       <Link to={"/"}>
         <CancelPresentationIcon
-          sx={{ color: "red", fontSize: 30 }}
+          sx={{ color: "red", fontSize: 50 }}
           className={Styles.Return_Arrow}
         />
       </Link>

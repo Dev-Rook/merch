@@ -63,12 +63,12 @@ const MensDataSlider = () => {
         breakpoints={{
           360: {
             width: 360,
-            slidesPerView: 1,
+            slidesPerView: 1.3,
             spaceBetween: 50,
           },
           380: {
             width: 380,
-            slidesPerView: 1,
+            slidesPerView: 1.5,
             spaceBetween: 50,
           },
           480: {

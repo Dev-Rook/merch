@@ -5,7 +5,7 @@
   gap: 20px;
   overflow: hidden;
   justify-content: left;
-  margin-top: 100px;
+  margin-top: 60px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -29,4 +29,10 @@
   align-items: center;
   height: 350px;
   width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .Slider_Container .Swiper .Card {
+    height: 200px;
+  }
 }/*# sourceMappingURL=HeroBoardSwiperStyles.module.css.map */

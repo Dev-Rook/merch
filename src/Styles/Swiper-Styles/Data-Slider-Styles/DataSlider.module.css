@@ -99,4 +99,11 @@
     height: 100%;
     width: 100%;
   }
+}
+@media only screen and (max-width: 360px) {
+  .Slider_Container .Swiper .Card {
+    flex-direction: column;
+    height: 450px;
+    width: 90%;
+  }
 }/*# sourceMappingURL=DataSlider.module.css.map */

@@ -147,6 +147,7 @@
   flex-direction: column;
   gap: 15px;
   justify-content: left;
+  width: 100%;
 }
 .Page .Descrption_Box .Title {
   color: black;
@@ -167,6 +168,7 @@
   font-size: 17px;
   font-weight: 300;
   font-style: italic;
+  text-align: left;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -42,7 +42,7 @@ const Nav = () => {
           Login
         </Link>
         <div className={Styles.Profile_Logo_Container}>
-          <img src="" alt="" className={Styles.Profile_Logo} />
+          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pimple-1658939057.png?crop=0.998xw:0.669xh;0.00170xw,0.215xh&resize=640:*" alt="" className={Styles.Profile_Logo} />
         </div>
       </div>
     </div>

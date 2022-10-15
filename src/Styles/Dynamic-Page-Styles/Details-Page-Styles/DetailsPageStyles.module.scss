@@ -173,6 +173,7 @@
 
     justify-content: left;
     // align-items: center;
+    width: 100%;
 
     .Title {
       color: black;
@@ -195,6 +196,7 @@
       font-size: 17px;
       font-weight: 300;
       font-style: italic;
+      text-align: left;
     }
   }
 }

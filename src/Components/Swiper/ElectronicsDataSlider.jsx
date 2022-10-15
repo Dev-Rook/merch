@@ -15,10 +15,10 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import "swiper/css/effect-fade ";
 
-const MensDataSlider = () => {
+const ElectronicsDataSlider = () => {
   const [data, setData] = useState([]);
 
-  const url = `https://fakestoreapi.com/products/category/men's%20clothing`;
+  const url = `https://fakestoreapi.com/products/category/electronics`;
 
 
   const getProductData = useCallback(async () => {
@@ -44,7 +44,7 @@ const MensDataSlider = () => {
 
   return (
     <div className={Styles.Slider_Container}>
-      <h3 className={Styles.Slider_Title}>Men</h3>
+      <h3 className={Styles.Slider_Title}>Electron</h3>
       <Swiper
         speed={1000}
         // spaceBetween={10}
@@ -92,7 +92,7 @@ const MensDataSlider = () => {
           data.map((value) => {
             return (
               <SwiperSlide key={value?.id}>
-                <Link onClick={scrollUp} to={"/Men Products/" + value.id}>
+                <Link onClick={scrollUp} to={"/Electronic Products/" + value.id}>
                   <div className={Styles.Card}>
                     <div className={Styles.Image_Container}>
                       <img src={value?.image} alt="" className={Styles.Image} />
@@ -118,4 +118,4 @@ const MensDataSlider = () => {
   );
 };
 
-export default MensDataSlider;
+export default ElectronicsDataSlider;

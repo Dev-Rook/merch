@@ -6,10 +6,10 @@ import Styles from "../Styles/Dynamic-Page-Styles/Details-Page-Styles/DetailsPag
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import CancelPresentationIcon from "@mui/icons-material/CancelPresentation";
 
-import MensDataSlider from "../Components/Swiper/MensDataSlider";
+import WomensDataSlider from "../Components/Swiper/WomensDataSlider";
 import PlaceholderSlide from "../Components/Swiper/PlaceholderSlide";
 
-const ProductDetailsPage = () => {
+const WomensProductDetails = () => {
   const { id } = useParams();
 
   const [details, setDetails] = useState({});
@@ -29,6 +29,7 @@ const ProductDetailsPage = () => {
   useEffect(() => {
     getProductDetails();
   }, [getProductDetails]);
+
   return (
     <div className={Styles.Page}>
       <Link to={"/"}>
@@ -74,11 +75,11 @@ const ProductDetailsPage = () => {
         <p className={Styles.Description}>{details.description}</p>
       </div>
 
-      <MensDataSlider />
+      <WomensDataSlider />
 
       <PlaceholderSlide />
     </div>
   );
 };
 
-export default ProductDetailsPage;
+export default WomensProductDetails;

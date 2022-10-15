@@ -6,6 +6,11 @@ import NavigationIcon from '@mui/icons-material/Navigation';
 
 import Nav from "./Components/Main/Nav/Nav";
 import Landing from "./Pages/Landing/Landing";
+import Electronics from "./Pages/Electronics/Electronics";
+import Men from "./Pages/Men/Men";
+import Women from "./Pages/Women/Women";
+import Jewelery from "./Pages/Jewelery/Jewelery";
+
 
 import MensProductDetailsPage from "./Dynamic-Pages/MensProductDetailsPage";
 import WomensProductDetails from "./Dynamic-Pages/WomensProductDetails";
@@ -39,6 +44,10 @@ function App() {
         <Nav />
         <Routes>
           <Route path={"/"} element={<Landing />} />
+          <Route path={"Men"} element={<Men />} />
+          <Route path={"Women"} element={<Women />} />
+          <Route path={"Electronics"} element={<Electronics />} />
+          <Route path={"Jewelery"} element={<Jewelery />} />
 
           {/* Dynamic Routes Start */}
           <Route path={"/Men Products/:id"} element={<MensProductDetailsPage />} />

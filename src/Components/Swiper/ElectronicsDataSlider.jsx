@@ -44,7 +44,7 @@ const ElectronicsDataSlider = () => {
 
   return (
     <div className={Styles.Slider_Container}>
-      <h3 className={Styles.Slider_Title}>Electron</h3>
+      <h3 className={Styles.Slider_Title}>Electronics</h3>
       <Swiper
         speed={1000}
         // spaceBetween={10}

@@ -4,11 +4,11 @@ import axios from "axios";
 import Styles from "../../Styles/Page-Styles/Global-Page-Styles/GlobalPageStyles.module.css";
 
 import PlaceholderSlide from "../../Components/Swiper/PlaceholderSlide";
-import WomensDataSlider from "../../Components/Swiper/WomensDataSlider";
+import ElectronicsDataSlider from "../../Components/Swiper/ElectronicsDataSlider";
 import MensDataSlider from "../../Components/Swiper/MensDataSlider";
 import JeweleryDataSlider from "../../Components/Swiper/JeweleryDataSlider";
 
-const Electronics = () => {
+const Women = () => {
   const [data, setData] = useState([]);
   const [visible, setVisible] = useState(4);
 
@@ -16,7 +16,7 @@ const Electronics = () => {
     setVisible((prev) => prev++);
   };
 
-  const url = `https://fakestoreapi.com/products/category/electronics`;
+  const url = `https://fakestoreapi.com/products/category/women's%20clothing`;
 
   const getMensData = useCallback(async () => {
     const result = await axios.get(url);
@@ -34,7 +34,7 @@ const Electronics = () => {
         <img src="" alt="" className={Styles.Header_Image} />
       </div>
 
-      <div className={Styles.Page_Title}>Electronics</div>
+      <div className={Styles.Page_Title}>Women</div>
 
       <PlaceholderSlide />
 
@@ -80,11 +80,11 @@ const Electronics = () => {
 
       <div className={Styles.Page_Title}>Other Categories</div>
 
-      <WomensDataSlider />
+      <ElectronicsDataSlider />
       <MensDataSlider />
       <JeweleryDataSlider />
     </div>
   );
 };
 
-export default Electronics;
+export default Women;

@@ -1,9 +1,11 @@
 .Nav {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
   display: flex;
 
-  position: absolute;
+  position: fixed;
   top: 0px;
+  left: 0px;
 
   //   padding: 5px;
 

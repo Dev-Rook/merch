@@ -99,7 +99,7 @@ const WomensDataSlider = () => {
                     </div>
 
                     <div className={Styles.Information_Box}>
-                      <h3 className={Styles.Large_Text}>{value?.title.slice(0, 30)}..</h3>
+                      <h3 className={Styles.Large_Text}>{value?.title.slice(0, 30)}...</h3>
                       <h3 className={Styles.Category}>{value?.category}</h3>
                       <h3 className={Styles.Description}>{value.description.slice(0, 100)}...</h3>
 

@@ -232,26 +232,24 @@
 
       justify-content: space-evenly;
 
-      .NavItem {
-        display: flex;
+      .Navlink {
+        color: white;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 200;
 
-        padding: 5px;
-        gap: 15px;
+        .NavItem {
+          display: flex;
 
-        align-items: center;
+          padding: 5px;
+          gap: 15px;
 
-        height: 100%;
-        width: 100%;
-        .Navlink {
-          color: white;
-          font-family: sans-serif;
-          font-size: 18px;
-          font-weight: 200;
+          align-items: center;
+
+          height: 100%;
+          width: 100%;
         }
       }
-
-
-      
 
       .Menu_NavItem {
         display: flex;
@@ -330,7 +328,8 @@
         }
       }
 
-      .Menu_NavItem:hover, .NavItem:hover {
+      .Menu_NavItem:hover,
+      .NavItem:hover {
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
           rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
           rgba(0, 0, 0, 0.2) 0px -3px 0px inset;

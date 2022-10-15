@@ -55,7 +55,7 @@ const Nav = () => {
         {/* <div className={Styles.Logo_Container}>
                 <img src="" alt="" className={Styles.Logo} />
             </div> */}
-        <Link to={"/"}>
+        <Link onClick={scrollUp} to={"/"}>
           <h3 className={Styles.Brand}>Merch</h3>
         </Link>
       </div>
@@ -129,26 +129,26 @@ const Nav = () => {
           </div>
 
           <ul className={Styles.Mobile_Navlink_Container}>
-            <li onClick={doubleFunction} className={Styles.NavItem}>
-              <Link className={Styles.Navlink} to={"Men"}>
+            <Link className={Styles.Navlink} to={"Men"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
                 Men
-              </Link>
-            </li>
-            <li onClick={doubleFunction} className={Styles.NavItem}>
-              <Link className={Styles.Navlink} to={"Women"}>
+              </li>
+            </Link>
+            <Link className={Styles.Navlink} to={"Women"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
                 Women
-              </Link>
-            </li>
-            <li onClick={doubleFunction} className={Styles.NavItem}>
-              <Link className={Styles.Navlink} to={"Electronics"}>
+              </li>
+            </Link>
+            <Link className={Styles.Navlink} to={"Electronics"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
                 Electronics
-              </Link>
-            </li>
-            <li onClick={doubleFunction} className={Styles.NavItem}>
-              <Link className={Styles.Navlink} to={"Jewelery"}>
+              </li>
+            </Link>
+            <Link className={Styles.Navlink} to={"Jewelery"}>
+              <li onClick={doubleFunction} className={Styles.NavItem}>
                 Jewelery
-              </Link>
-            </li>
+              </li>
+            </Link>
             <a
               href={"https://github.com/Dev-Rook/merch"}
               target={"_blank"}

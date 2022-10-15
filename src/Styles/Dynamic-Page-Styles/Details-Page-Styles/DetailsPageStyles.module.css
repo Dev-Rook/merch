@@ -173,4 +173,9 @@
   .Page {
     width: 100%;
   }
+}
+@media only screen and (max-width: 500px) {
+  .Page .Header .Header_Image .Product_Information_Box {
+    left: 0px;
+  }
 }/*# sourceMappingURL=DetailsPageStyles.module.css.map */

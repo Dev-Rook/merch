@@ -23,7 +23,7 @@
   padding: 5px;
 }
 .Slider_Container .Swiper .Card {
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +31,7 @@
   width: 380px;
 }
 .Slider_Container .Swiper .Card .Image_Container {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   height: 100%;
   width: 40%;
@@ -85,7 +85,7 @@
   .Slider_Container .Swiper .Card {
     flex-direction: column;
     height: 450px;
-    width: 290px;
+    width: 100%;
   }
   .Slider_Container .Swiper .Card .Image_Container {
     width: 100%;
@@ -102,8 +102,6 @@
 }
 @media only screen and (max-width: 360px) {
   .Slider_Container .Swiper .Card {
-    flex-direction: column;
-    height: 450px;
-    width: 90%;
+    width: 95%;
   }
 }/*# sourceMappingURL=DataSlider.module.css.map */

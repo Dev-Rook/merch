@@ -9,7 +9,7 @@ import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 // import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
 import LogoDevIcon from "@mui/icons-material/LogoDev";
-import CodeIcon from '@mui/icons-material/Code';
+import CodeIcon from "@mui/icons-material/Code";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
@@ -41,7 +41,7 @@ const Nav = () => {
   const doubleFunction = () => {
     showMenu();
     scrollUp();
-  }
+  };
 
   const [expanded, setExpanded] = React.useState(false);
 
@@ -127,24 +127,25 @@ const Nav = () => {
               className={Styles.Close_Icon}
             />
           </div>
+
           <ul className={Styles.Mobile_Navlink_Container}>
-            <li className={Styles.NavItem}>
-              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Men"}>
+            <li onClick={doubleFunction} className={Styles.NavItem}>
+              <Link className={Styles.Navlink} to={"Men"}>
                 Men
               </Link>
             </li>
-            <li className={Styles.NavItem}>
-              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Women"}>
+            <li onClick={doubleFunction} className={Styles.NavItem}>
+              <Link className={Styles.Navlink} to={"Women"}>
                 Women
               </Link>
             </li>
-            <li className={Styles.NavItem}>
-              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Electronics"}>
+            <li onClick={doubleFunction} className={Styles.NavItem}>
+              <Link className={Styles.Navlink} to={"Electronics"}>
                 Electronics
               </Link>
             </li>
-            <li className={Styles.NavItem}>
-              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Jewelery"}>
+            <li onClick={doubleFunction} className={Styles.NavItem}>
+              <Link className={Styles.Navlink} to={"Jewelery"}>
                 Jewelery
               </Link>
             </li>

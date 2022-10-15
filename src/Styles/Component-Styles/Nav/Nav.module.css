@@ -96,6 +96,7 @@
 
 .Mobile_Menu {
   background-color: rgba(196, 196, 196, 0.2);
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -281,7 +282,12 @@
   color: rgb(160, 203, 220);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
-.Mobile_Menu .ShowMenu {
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.ShowMenu {
   transform: translateX(0%);
 }
 

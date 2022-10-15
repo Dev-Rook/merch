@@ -116,6 +116,7 @@
 
 .Mobile_Menu {
   background-color: rgba(196, 196, 196, 0.2);
+  border: 1px solid black;
 
   display: flex;
   flex-direction: column;
@@ -361,10 +362,12 @@
       }
     }
   }
-
-  .ShowMenu {
-    transform: translateX(0%);
-  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.ShowMenu {
+  transform: translateX(0%);
 }
 
 // Media Queries Start

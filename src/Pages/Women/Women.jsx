@@ -42,7 +42,7 @@ const Women = () => {
         {data &&
           data.slice(0, visible).map((value) => {
             return (
-              <Link to={"/Men Products/" + value.id} key={value.id}>
+              <Link to={"/Women Products/" + value.id} key={value.id}>
                 <div className={Styles.Card}>
                   <div className={Styles.Product_Image_Container}>
                     <img

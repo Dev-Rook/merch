@@ -1,7 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "../../../Styles/Component-Styles/Nav/Nav.module.css";
-
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -10,6 +9,7 @@ import TerminalOutlinedIcon from "@mui/icons-material/TerminalOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 // import ForumOutlinedIcon from "@mui/icons-material/ForumOutlined";
 import LogoDevIcon from "@mui/icons-material/LogoDev";
+import CodeIcon from '@mui/icons-material/Code';
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
@@ -24,14 +24,24 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 // Material UI Accordion Imports End
 
-
 const Nav = () => {
-
   const [menu, setMenu] = useState(false);
 
   const showMenu = () => {
     setMenu((prev) => !prev);
   };
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const doubleFunction = () => {
+    showMenu();
+    scrollUp();
+  }
 
   const [expanded, setExpanded] = React.useState(false);
 
@@ -78,7 +88,11 @@ const Nav = () => {
           Login
         </Link>
         <div className={Styles.Profile_Logo_Container}>
-          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pimple-1658939057.png?crop=0.998xw:0.669xh;0.00170xw,0.215xh&resize=640:*" alt="" className={Styles.Profile_Logo} />
+          <img
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pimple-1658939057.png?crop=0.998xw:0.669xh;0.00170xw,0.215xh&resize=640:*"
+            alt=""
+            className={Styles.Profile_Logo}
+          />
         </div>
         <MenuIcon
           sx={{ fontSize: 30 }}
@@ -97,11 +111,11 @@ const Nav = () => {
           <div className={Styles.Header}>
             <div className={Styles.Menu_Left_Side}>
               <div className={Styles.Logo_Container}>
-                {/* <img
-                  src={require("../../../Assests/Images/Logo.png")}
+                <img
+                  src={`https://github.com/Dev-Rook/rookdev/blob/master/src/Assests/Images/Logo.png?raw=true`}
                   className={Styles.Logo}
                   alt=""
-                /> */}
+                />
               </div>
 
               <h3 className={Styles.Brand}>Dev Rook</h3>
@@ -114,54 +128,41 @@ const Nav = () => {
             />
           </div>
           <ul className={Styles.Mobile_Navlink_Container}>
-            <Link to={"/"} onClick={showMenu} className={Styles.Menu_Navlink}>
-              <li className={Styles.Menu_NavItem}>
-                <HomeOutlinedIcon
-                  sx={{ fontSize: 25 }}
-                  className={Styles.Navlink_Icon}
-                />
-                <p>Home</p>
-              </li>
-            </Link>
-            <Link
-              to={"Portfolio"}
-              onClick={showMenu}
+            <li className={Styles.NavItem}>
+              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Men"}>
+                Men
+              </Link>
+            </li>
+            <li className={Styles.NavItem}>
+              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Women"}>
+                Women
+              </Link>
+            </li>
+            <li className={Styles.NavItem}>
+              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Electronics"}>
+                Electronics
+              </Link>
+            </li>
+            <li className={Styles.NavItem}>
+              <Link onClick={doubleFunction} className={Styles.Navlink} to={"Jewelery"}>
+                Jewelery
+              </Link>
+            </li>
+            <a
+              href={"https://github.com/Dev-Rook/merch"}
+              target={"_blank"}
+              rel={"noreferrer"}
+              onClick={doubleFunction}
               className={Styles.Menu_Navlink}
             >
               <li className={Styles.Menu_NavItem}>
-                <TerminalOutlinedIcon
+                <CodeIcon
                   sx={{ fontSize: 25 }}
                   className={Styles.Navlink_Icon}
                 />
-                <p>Portfolio</p>
+                <p>Add to this project?</p>
               </li>
-            </Link>
-            <Link
-              to={"Contact"}
-              onClick={showMenu}
-              className={Styles.Menu_Navlink}
-            >
-              <li className={Styles.Menu_NavItem}>
-                <SendOutlinedIcon
-                  sx={{ fontSize: 25 }}
-                  className={Styles.Navlink_Icon}
-                />
-                <p>Contact</p>
-              </li>
-            </Link>
-            <Link
-              to={"DevLogs"}
-              onClick={showMenu}
-              className={Styles.Menu_Navlink}
-            >
-              <li className={Styles.Menu_NavItem}>
-                <LogoDevIcon
-                  sx={{ fontSize: 25 }}
-                  className={Styles.Navlink_Icon}
-                />
-                <p>Dev Logs</p>
-              </li>
-            </Link>
+            </a>
             <li className={Styles.Menu_NavItem}>
               <Accordion
                 expanded={expanded === "panel1"}
@@ -189,11 +190,11 @@ const Nav = () => {
                       rel={"noreferrer"}
                       href="https://discord.gg/ce7mtCbgmG"
                     >
-                      {/* <img
-                        src={require("../../../Assests/Icons/Discord-Logo.png")}
+                      <img
+                        src={require("../../../Assets/Icons/Discord-Logo.png")}
                         alt=""
                         className={Styles.Discord_Icon}
-                      /> */}
+                      />
                     </a>
                   </Typography>
                 </AccordionSummary>

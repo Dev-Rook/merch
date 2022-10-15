@@ -95,7 +95,7 @@
 }
 
 .Mobile_Menu {
-  background-color: rgba(196, 196, 196, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -186,6 +186,20 @@
   gap: 15px;
   justify-content: space-evenly;
 }
+.Mobile_Menu .Content_Container .Mobile_Navlink_Container .NavItem {
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.Mobile_Menu .Content_Container .Mobile_Navlink_Container .NavItem .Navlink {
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
 .Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem {
   display: flex;
   padding: 5px;
@@ -244,7 +258,7 @@
   margin: auto;
   width: 20px;
 }
-.Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem:hover {
+.Mobile_Menu .Content_Container .Mobile_Navlink_Container .Menu_NavItem:hover, .Mobile_Menu .Content_Container .Mobile_Navlink_Container .NavItem:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .Mobile_Menu .Content_Container .Menu_Separater {
@@ -297,6 +311,14 @@
   }
   .Nav .Menu_Icon {
     display: block;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .Nav .Mobile_Menu .Content_Container {
+    width: 100%;
+  }
+  .Nav .Mobile_Menu .Content_Container .Header .Close_Icon {
+    right: 10px;
   }
 }
 @media only screen and (max-width: 414px) {
